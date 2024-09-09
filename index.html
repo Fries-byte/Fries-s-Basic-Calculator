@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fries's Basic Calculator ~ Home</title>
+    <link rel="stylesheet" href="CalculatorStyle.css">
+</head>
+<body>
+    <center><h1 id="text">Fries's Calculator</h1></center>
+    
+    <center> <input type="number" placeholder="                  ~~~~~" id="q1"> </center>
+
+    <br>
+    <br>
+
+    <center> <input type="number" placeholder="                  ~~~~~" id="q2"> </center>
+    
+    <br>
+
+    <center> <button type="button" id="go" style="width: 50px; height: 30px;">Read</button> </center>
+    
+
+    <script>
+      const qu1 = document.getElementById("q1");
+      const qu2 = document.getElementById("q2");
+      document.getElementById("go").onclick = function() {
+            const num1 = Number(qu1.value);
+            const num2 = Number(qu2.value);
+            let math = num1 + num2;
+            window.alert("output; "+math);
+            window.location.reload(true);
+        }
+    </script>
+</body>
+</html>
